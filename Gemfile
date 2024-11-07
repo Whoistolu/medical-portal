@@ -16,6 +16,8 @@ gem "devise"
 
 gem "bootstrap"
 
+gem 'cssbundling-rails'
+
 gem "chartkick"
 
 gem "groupdate"
