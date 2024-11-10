@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  resources :patients, only: [:index, :new, :create, :edit, :update, :destroy]
+
   # Defines the root path route ("/")
   # root "articles#index"
 end
