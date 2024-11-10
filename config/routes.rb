@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root 'dashboard#index'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  devise_for :users
+
+  resources :patients, only: [:index, :new, :create, :edit, :update, :destroy]
+
+  get 'dashboard', to: 'dashboard#index'
 end
