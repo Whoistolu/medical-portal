@@ -1,2 +1,52 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class="splash-container">
+  <!-- Navigation Bar -->
+  <nav class="splash-navbar">
+    <div class="navbar-brand">
+      <h2>quick-care</h2>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#doctors">Doctors</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="<%= new_user_session_path %>" class="btn btn-link">Login</a></li>
+      <li><a href="<%= new_user_registration_path %>" class="btn btn-success">Signup</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="splash-content">
+    <div class="splash-text">
+      <h1>We Will Help You To Improve Your Mental Health</h1>
+      <p>Quick-care is an online medical clinic. This is our official website that has built for the user of our great Doctors and Receptionists</p>
+      <div class="splash-buttons">
+        <a href="<%= new_user_registration_path %>" class="btn btn-success">Get Appointment</a>
+        <a href="<%= new_user_session_path %>" class="btn btn-outline-success">Find Specialist</a>
+      </div>
+    </div>
+    <div class="splash-image">
+      <img src="<%= asset_path 'doctor_image.png' %>" alt="Doctor" class="doctor-image">
+    </div>
+  </div>
+
+  <!-- Statistics Section -->
+  <div class="splash-stats">
+    <div class="stat-item">
+      <h2>24/7</h2>
+      <p>Online Support</p>
+    </div>
+    <div class="stat-item">
+      <h2>100+</h2>
+      <p>Doctors</p>
+    </div>
+    <div class="stat-item">
+      <h2>1M+</h2>
+      <p>Active Patients</p>
+    </div>
+    <div class="stat-item">
+      <h2>5M+</h2>
+      <p>Interested</p>
+    </div>
+  </div>
+</div>
