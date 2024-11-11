@@ -1,5 +1,4 @@
 class PatientsController < ApplicationController
-
   before_action :authenticate_user!
   before_action :check_receptionist
 
