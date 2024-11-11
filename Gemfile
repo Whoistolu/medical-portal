@@ -14,10 +14,6 @@ gem "pg", "~> 1.1"
 
 gem "devise"
 
-gem "bootstrap"
-
-gem 'cssbundling-rails'
-
 gem "chartkick"
 
 gem "groupdate"
